@@ -1,0 +1,252 @@
+*{
+    box-sizing: border-box;
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+.header{
+    background-color:hsl(225,100%,98%);
+    height: 195px;
+}
+
+.head{
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-title {
+    text-transform: capitalize;
+    font-weight: light;
+    line-height: 1.5px;
+    margin: 40px;
+}
+
+
+.dark {
+    color: white;
+    background-color: #0d192a;
+}
+
+.dark .card-fcbk, .dark .card-insta, .dark .card-twt, .dark .card-ytb{
+    color: white;
+    background-color: #222b38;
+}
+
+.dark .card-fcbk:hover, .dark .card-twt:hover, .dark .card-insta:hover, .dark .card-ytb:hover{
+    cursor: pointer;
+    background-color: hsl(228, 21%, 28%);
+}
+
+
+.dark .card1{
+    color: white;
+    background-color: #222b38;
+}
+
+.dark .card1:hover{
+    cursor: pointer;
+    background-color: #4e5561;
+}
+
+.button{
+    margin: 60px;
+}
+
+.cards1{
+    display: flex;
+    justify-content: space-evenly;
+    text-transform: capitalize;
+    text-align: center;
+    margin-top: -71px;
+    
+}
+
+.card-fcbk:hover, .card-twt:hover, .card-insta:hover, .card-ytb:hover, .card1:hover{
+    cursor: pointer;
+    background-color: hsl(228, 51%, 90%);
+}
+
+.card-fcbk{
+    background-color:hsl(225,100%,98%);
+    width: 226px;
+    text-align: center;
+    height: 191px;
+    border-radius: 6px;
+    border-top: 5px solid hsl(208, 92%, 53%);
+    padding: 8px;
+}
+
+
+.card-twt{
+    background-color:hsl(225,100%,98%);
+    width: 226px;
+    text-align: center;
+    height: 191px;
+    border-radius: 6px;
+    border-top: 5px solid hsl(203, 89%, 53%);
+    padding: 8px;
+}
+
+.card-insta{
+    width: 226px;
+    text-align: center;
+    height: 191px;
+    border-radius: 6px;
+    border-image: linear-gradient(to right,hsl(37, 97%, 70%), hsl(329, 70%, 58%))100% 1;
+    border-style: solid;
+    border-bottom: 0;
+    border-width: 4px;
+    background-color:hsl(225,100%,98%);
+    padding: 8px;
+}
+
+.card-ytb{
+    background-color:hsl(225,100%,98%);
+    width: 226px;
+    text-align: center;
+    height: 191px;
+    border-radius: 6px;
+    border-top: 5px solid hsl(348, 97%, 39%);
+    padding: 8px;
+}
+
+.follower-counter h1{
+    font-size: 60px;   
+}
+
+.follower-counter p{
+    letter-spacing: 6px;
+    font-weight: 200;
+}
+
+.icon-up{
+    color: hsl(163, 72%, 41%);   
+}
+
+.icon-down{
+    color: hsl(5, 72%, 41%);
+}
+
+.overview h2{
+    color: hsl(228, 12%, 44%);
+    text-transform: capitalize;
+    margin: 45px;
+    margin-bottom: 17px;
+    font-size: x-large;
+}
+
+.cards{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    text-transform: capitalize;
+    padding: 42px;
+    padding-top: 0px;
+
+}
+.card1{
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    width: 250px;
+    border-radius: 5px;
+    margin: 0 auto 25px auto;
+    padding: 20px;
+    color:hsl(228, 12%, 44%);
+    background:hsl(225,100%,98%)
+   
+}
+
+.page-title{
+    display: flex;
+    justify-content: space-between;
+}
+
+.card1 .number{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.number h6{
+    font-size: xx-large;
+}
+
+.number img{
+    margin: 5px;
+}
+
+.number span{
+    margin-top: 10px
+}
+
+@media (max-width: 450px) {
+    .header{
+        width: 450px;
+        height: 174px;
+    }
+
+    .head{
+        display: block;
+    }
+
+    .header-title{
+        border-bottom: 1px solid black;
+        width: 100%;
+        margin: 0px;
+    }
+
+    .dark .header-title{
+        border-bottom: 1px solid rgb(179, 174, 174);
+    }
+
+    .header-title h2{
+        padding: 23px;
+        font-size: 29px;
+        padding-left: 3px;
+    }
+
+    .header-title p{
+        margin-left: 3px;
+        color: hsl(228, 12%, 44%);
+        padding-bottom: 8px;
+        margin-top: -23px;
+
+    }
+
+    .button{
+        margin: 0px;
+        margin-top: 10px;
+    }
+
+    .card-fcbk, .card-twt, .card-ytb, .card-insta{
+        width: 209px;
+        margin: 1px;
+        margin-bottom: 26px;
+    }
+
+    .cards1{
+        display: flex;
+        flex-wrap: wrap;
+        margin: 1px;
+    }
+
+    .overview h2{
+        margin-left: 2px;
+    }
+
+    .card1{
+        height: 111px;
+        width: 205px;
+    }
+
+    .cards{
+        padding: 5px;
+    }
+
+    
+
+}
+
+
+
